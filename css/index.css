@@ -13,6 +13,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(#421e1e, #2f314b);
+}
+
+@keyframes cardani {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .card {
@@ -26,6 +36,7 @@
     overflow: auto;
     box-shadow: black 0px 0px 20px, black 0px 0px 20px;
     transition: 0.2s ease-in-out;
+    animation: cardani 3s ease;
 }
 
 .card:hover {
