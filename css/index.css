@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    max-width: max-content;
+    max-height: max-content;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    overflow: auto;
+    box-shadow: black 0px 0px 20px, black 0px 0px 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: black 0px 0px 50px, black 0px 0px 50px;
+    transform: translateY(-10px);
+}
+
+.cardhead {
+    height: 55%;
+}
+
+.img {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid white;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background: url('../img/photo.png');
+    background-size: cover;
+}
+
+.name {
+    margin: 10px;
+}
+
+.description {
+    margin: 10px;
+}
+
+.cardfooter {
+    margin: 50px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footertext {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.dateofbir {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.phone {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        max-width: 95%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .card {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .card {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 285px) {
+    .card {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .img {
+        width: 225px;
+        height: 225px;
+    }
+}
